@@ -1,0 +1,238 @@
+@import "general.css";
+@import "layout.css";
+@import "queries.css";
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 48%);
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-line-pack: distribute;
+  align-content: space-around;
+  grid-auto-rows: 250px;
+}
+
+.card {
+  margin: 15px 0;
+  padding-left: 10px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  /*grid-template-rows: 29px 25px 25px 110px 25px;*/
+  grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
+  grid-template-areas:
+    "h6 img"
+    "h3 img"
+    "p img"
+    "brief img"
+    "a img";
+  -webkit-transition: border 0.2s ease, -webkit-box-shadow 0.2s ease,
+    -webkit-transform 0.2s ease;
+  transition: border 0.2s ease, -webkit-box-shadow 0.2s ease,
+    -webkit-transform 0.2s ease;
+  transition: border 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+  transition: border 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease,
+    -webkit-box-shadow 0.2s ease, -webkit-transform 0.2s ease;
+  border: 1px solid #efefef;
+}
+.card:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.card:hover {
+  border: 1px solid #efefef;
+  -webkit-box-shadow: 1px 1px 8px 1px #efefef;
+  box-shadow: 1px 1px 8px 1px #efefef;
+}
+
+.img-container {
+  grid-area: img;
+  background-color: #fffff8;
+  overflow: hidden;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.card-img {
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+  background-color: black;
+  -webkit-transition: opacity 0.2s ease, -webkit-transform 0.2s ease;
+  transition: opacity 0.2s ease, -webkit-transform 0.2s ease;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  transition: opacity 0.2s ease, transform 0.2s ease,
+    -webkit-transform 0.2s ease;
+}
+
+.card-img:hover {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+}
+
+h6 {
+  grid-area: h6;
+  padding-top: 5px;
+}
+
+h3 {
+  grid-area: h3;
+  font-weight: 500;
+}
+
+.date {
+  grid-area: p;
+}
+
+.brief {
+  padding-right: 5px;
+  grid-area: brief;
+  font-size: 80%;
+  overflow: hidden;
+}
+
+.card .blue-a {
+  grid-area: a;
+}
+
+@media (max-width: 1024px) {
+  
+  .page-container {
+    display: grid;
+    grid-template-rows: 80px auto 80px;
+    width: 96%;
+    margin: 0 auto;
+  }
+
+  header h1 {
+    font-size: 220%;
+  }
+}
+
+@media (max-width: 900px) {
+  
+  .card {
+    margin: 15px 0;
+    padding-left: 10px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
+    grid-template-areas:
+      "h6"
+      "h3"
+      "p "
+      "brief"
+      "a";
+    -webkit-transition: border 0.2s ease, -webkit-box-shadow 0.2s ease,
+      -webkit-transform 0.2s ease;
+    transition: border 0.2s ease, -webkit-box-shadow 0.2s ease,
+      -webkit-transform 0.2s ease;
+    transition: border 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+    transition: border 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease,
+      -webkit-box-shadow 0.2s ease, -webkit-transform 0.2s ease;
+    border: 1px solid #efefef;
+  }
+
+  .card-img,
+  .img-container {
+    display: none;
+  }
+}
+
+@media (max-width: 685px) {
+  
+  html {
+    font-size: 22px;
+  }
+
+  header a.btn,
+  header a {
+    width: 130px;
+  }
+
+  .page-container {
+    display: grid;
+    grid-template-rows: 80px auto 80px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  header h1 {
+    font-size: 180%;
+  }
+
+  h3 {
+    font-size: 100%;
+  }
+
+  .card p {
+    font-size: 75%;
+  }
+}
+
+@media (max-width: 580px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(1, 96%);
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-line-pack: distribute;
+    align-content: space-around;
+    grid-auto-rows: 250px;
+    padding: 0 2%;
+  }
+
+  .card {
+    grid-template-columns: 70% 30%;
+    grid-template-areas:
+      "h6 img"
+      "h3 img"
+      "p img"
+      "brief img"
+      "a img";
+  }
+
+  .card-img,
+  .img-container {
+    display: block;
+  }
+
+
+  header a.btn,
+  header a {
+    width: 110px;
+  }
+
+  .page-container {
+    width: 98%;
+    padding: 0 auto;
+  }
+
+  header h1 {
+    font-size: 130%;
+  }
+
+}
+
+@media (max-width: 460px) {
+
+  header h1 {
+    font-size: 140%;
+  }
+
+}
+
+@media (max-width: 460px) {
+
+  header h1 {
+    display: none;
+  }
+
+}

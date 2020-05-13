@@ -1,0 +1,208 @@
+@import "general.css";
+@import "layout.css";
+
+main {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 300px 100px auto 100px;
+    grid-template-areas: 
+    "img img"
+    "author about"
+    "post about"
+    "btns btns";
+    grid-row-gap: 20px;
+}
+
+
+.covid-image {
+    grid-area: img;
+    background-image: url("../img/covid-spread.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.reader-image {
+    grid-area: img;
+    background-image: url("../img/reader-2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.petra-image {
+    grid-area: img;
+    background-image: url("../img/petra.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.media-image {
+    grid-area: img;
+    background-image: url("../img/social-media.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.ramadan-image {
+    grid-area: img;
+    background-image: url("../img/ramadan.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.sport-image {
+    grid-area: img;
+    background-image: url("../img/sports.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.art-image {
+    grid-area: img;
+    background-image: url("../img/art.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.author-info{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    grid-area: author;
+}
+
+.author-info ul li {
+    list-style-type: none;
+}
+
+.author-info ul li ion-icon {
+    -webkit-transition: color 0.2s ease;
+    transition: color 0.2s ease;
+}
+
+.author-info ul li ion-icon[name="logo-twitter"]:hover {
+    color: #1da1f2;
+}
+
+.author-info ul li ion-icon[name="logo-facebook"]:hover {
+    color: #3b5998;
+}
+
+.author-info ul li ion-icon[name="logo-linkedin"]:hover {
+    color: #0077b5;
+}
+
+.author-info img {
+    height: 80%;
+    border-radius: 50%;
+}
+
+.author-profile {
+    height: 100%;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-left: 3px solid #0984e3;
+    border-radius: 50px;
+}
+
+.author-profile .title {
+    font-weight: 900;
+    color: #0984e3;
+}
+
+.author-profile .work {
+    font-weight: 100;
+    font-style: italic;
+    color: #999;
+}
+
+aside {
+    grid-area: about;
+    padding-left: 40px;
+    padding-top: 10px;
+}
+
+aside h4 {
+    text-decoration: underline;
+    font-size: 100%;
+    color: #e67e22;
+}
+
+aside p {
+    margin-top: 10px;
+    font-size: 90%;
+}
+
+aside h5 {
+    margin-top: 10px;
+}
+
+aside ul {
+    padding-left: 30px;
+}
+
+article {
+    grid-area: post;
+}
+
+article h3 {
+    font-style: italic;
+    display: inline-block;
+} 
+
+article h3::after {
+    content: " ";
+    display: block;
+    height: 3px;
+    background-color: #e74c3c;
+    width: 50px;
+    border-radius: 50px;
+    margin: 6px auto 0 auto;
+} 
+
+article p {
+    margin: 15px 0;
+    line-height: 130%;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+}
+
+.btns-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    grid-area: btns;
+}
+
+.btns-container a {
+    width: 120px;
+    padding: 10px 0;
+}
+
+.btns-container a:first-of-type {
+    margin-right: 10px;
+}
+
+.btns-container a:last-of-type {
+    margin-left: 10px;
+}
