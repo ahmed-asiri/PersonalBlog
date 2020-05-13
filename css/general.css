@@ -1,5 +1,7 @@
  
 /*General Styling for the Whole project*/
+
+
 * {
     padding: 0;
     margin: 0;
@@ -7,17 +9,25 @@
     box-sizing: border-box;
     color: #2d3436;
 }
+
+
 html {
     font-size: 20px;
     font-family: 'Lato', Arial, Helvetica, sans-serif;
 }
+
+
 h1 {
     font-weight: 500;
 }
+
+
 .blue-a {
     color: #3498db;
     font-size: 80%;
 }
+
+
 header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -30,6 +40,8 @@ header {
     align-items: center;
     padding: 10px;
 }
+
+
 header ion-icon {
     font-size: 130%;
     -webkit-transition: color 0.2s ease, -webkit-transform 0.2s ease;
@@ -37,6 +49,8 @@ header ion-icon {
     transition: transform 0.2s ease, color 0.2s ease;
     transition: transform 0.2s ease, color 0.2s ease, -webkit-transform 0.2s ease;
 }
+
+
 header ion-icon:hover {
     color: #0984e3;
     -webkit-transform: scale(1.15);
@@ -44,18 +58,28 @@ header ion-icon:hover {
     -webkit-transform: rotate3d(0,1,0,180deg);
     transform: rotate3d(0,1,0,180deg);
 }
+
+
 header h1 {
     font-size: 250%;
 }
+
+
 header h1 a {
     text-decoration: none;
 }
+
+
 header a {
     width: 90px;
 }
+
+
 header a:last-of-type {
     text-align: right;
 }
+
+
 footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -69,17 +93,25 @@ footer {
     font-size: 70%;
     border-top: 1px solid #efefef;
 }
+
+
 footer ion-icon {
     color: #d63031;
     vertical-align: middle;
 }
+
+
 .date {
     font-size: 70%;
     color: #999;
 }
+
+
 h6 {
     color: #2980b9;
 }
+
+
 .btn {
     border-radius: 40px;
     border: 1px solid #2980b9;
@@ -100,10 +132,14 @@ h6 {
     -webkit-transition: background-color 0.2s ease;
     transition: background-color 0.2s ease;
 }
+
+
 .btn:hover {
     background-color: #0984e3;
     color: #efefef;
 }
+
+
 .btn-fill {
     background-color: #065ea2;
     color: #efefef;
