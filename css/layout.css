@@ -1,7 +1,7 @@
+/*The Website General Layout*/
 .page-container {
     display: grid;
     grid-template-rows: 80px auto 80px;
     width: 900px;
     margin: 0 auto;
 }
-
