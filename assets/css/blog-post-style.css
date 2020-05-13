@@ -166,35 +166,12 @@
 
  aside h5 {
      margin-top: 10px;
+     color: #16a085;
 }
 
 
  aside ul {
      padding-left: 30px;
-}
-
-
-aside .home-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 100%;
-    margin-top: 30px;
-}
-
-
-aside h5:last-of-type a{
-    color: #e74c3c;
-    text-decoration: none;
-
-}
-
-
-aside h5:last-of-type a ion-icon{
-    color: #e74c3c;
-    vertical-align: baseline;
-    margin-right: 5px;
-
 }
 
 
@@ -207,6 +184,11 @@ figure {
 
  article {
      grid-area: post;
+}
+
+
+h2 {
+    color: #2980b9;
 }
 
 
