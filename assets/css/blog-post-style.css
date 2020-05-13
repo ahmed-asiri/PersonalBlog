@@ -198,6 +198,13 @@ aside h5:last-of-type a ion-icon{
 }
 
 
+figure {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
  article {
      grid-area: post;
 }
