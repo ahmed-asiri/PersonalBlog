@@ -179,7 +179,7 @@ h3 {
 @media (max-width: 580px) {
   main {
     display: grid;
-    grid-template-columns: repeat(1, 96%);
+    grid-template-columns: repeat(1, 100%);
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
