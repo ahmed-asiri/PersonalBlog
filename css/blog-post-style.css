@@ -128,8 +128,6 @@
      -webkit-box-align: center;
      -ms-flex-align: center;
      align-items: center;
-     border-left: 3px solid #0984e3;
-     border-radius: 50px;
 }
 
 
@@ -173,6 +171,30 @@
 
  aside ul {
      padding-left: 30px;
+}
+
+
+aside .home-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
+    margin-top: 30px;
+}
+
+
+aside h5:last-of-type a{
+    color: #e74c3c;
+    text-decoration: none;
+
+}
+
+
+aside h5:last-of-type a ion-icon{
+    color: #e74c3c;
+    vertical-align: baseline;
+    margin-right: 5px;
+
 }
 
 

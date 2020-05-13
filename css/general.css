@@ -101,6 +101,11 @@ footer ion-icon {
 }
 
 
+em {
+    color: #e74c3c;
+}
+
+
 .date {
     font-size: 70%;
     color: #999;
@@ -109,6 +114,11 @@ footer ion-icon {
 
 h6 {
     color: #2980b9;
+}
+
+
+.underlined {
+    text-decoration: underline;
 }
 
 
