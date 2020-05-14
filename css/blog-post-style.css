@@ -224,5 +224,20 @@
      aside {
          padding-left: 0px;
     }
+    .author-info img {
+        height: 100%;
+   }
+   .author-profile {
+       height: 65%;
+       border: none;
+   }
+
+   header h1 {
+       display: block;
+   }
+
+   header a, h1, ion-icon {
+        display: inline-block;
+    }
 }
  
